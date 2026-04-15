@@ -1,4 +1,4 @@
-using Fusion;
+﻿using Fusion;
 using UnityEngine;
 
 public enum PlayerClass
@@ -21,9 +21,11 @@ public struct PlayerClassInfo
 public struct NetworkInputData : INetworkInput
 {
     public Vector2 MoveDirection;
-    public bool Attack;   // J - hit
+    public bool Attack;   
     public bool Jump;
-    public bool Block;    // K - kick / block
-    public bool SuperHit; // I
-    public bool Shoot;    // U
+    public bool Block;   
+    public bool SuperHit; 
+    public bool Shoot;    
+    public bool Flash;
+    public bool ChargePower;   
 }

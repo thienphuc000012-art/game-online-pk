@@ -78,7 +78,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7899485391001861893}
   - component: {fileID: 58670271988423852}
-  - component: {fileID: 6455882419853627259}
+  - component: {fileID: 3452273830515226244}
   m_Layer: 0
   m_Name: scale
   m_TagString: Untagged
@@ -95,10 +95,11 @@ Transform:
   m_GameObject: {fileID: 2771744187724249609}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.306, y: 0.318, z: 1.13}
-  m_LocalScale: {x: 0.96737033, y: 0.9673676, z: 3.5792599}
+  m_LocalPosition: {x: 0.648, y: 0.2727, z: 1.13}
+  m_LocalScale: {x: 0.9291592, y: 1.105024, z: 3.5792599}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3665270488657431453}
   m_Father: {fileID: 8821305857260907479}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &58670271988423852
@@ -160,7 +161,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!61 &6455882419853627259
+--- !u!61 &3452273830515226244
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,7 +195,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.23870294, y: 0}
+  m_Offset: {x: 0.23870285, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.0027023952, y: 0.5}
@@ -204,7 +205,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.48000005, y: 0.30000004}
+  m_Size: {x: 0.48, y: 0.3}
   m_EdgeRadius: 0
 --- !u!1 &2936839866523857476
 GameObject:
@@ -355,7 +356,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3665270488657431453
 Transform:
   m_ObjectHideFlags: 0
@@ -365,11 +366,11 @@ Transform:
   m_GameObject: {fileID: 7627395452411918531}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.82, y: 0.307, z: 1.13}
-  m_LocalScale: {x: 0.9538784, y: 0.9538784, z: 3.5293498}
+  m_LocalPosition: {x: 0.5313365, y: -0.011363957, z: 0}
+  m_LocalScale: {x: 0.98605293, y: 0.9860558, z: 0.9860558}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8821305857260907479}
+  m_Father: {fileID: 7899485391001861893}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3190728774118222977
 SpriteRenderer:
@@ -513,7 +514,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5137595390283862149
 Transform:
   m_ObjectHideFlags: 0
@@ -568,7 +569,6 @@ Transform:
   - {fileID: 4197997572458352988}
   - {fileID: 7899485391001861893}
   - {fileID: 584236954470550853}
-  - {fileID: 3665270488657431453}
   - {fileID: 5137595390283862149}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -685,15 +685,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dcd213dac0bb68469316a7d34da129e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NetworkedPlayerController
+  _PlayerName: Player
   _CurHealthy: 0
   _CurPower: 10000000
   _IsDamaged: 0
   _IsFacingRight: 1
+  _IsPower: 0
   _NetVelocity: {x: 0, y: 0, z: 0}
+  _NetGrounded: 0
+  _IsHost: 0
   _State: 0
+  _DamageEndTime: 0
+  _PowerRegenRate: 80
   speedMove: 60
   speedJump: 70
+  bulletPrefab:
+    RawGuidValue: e73fb332dcd4fa74392dd92cc8b998e2
+  bulletSpawnPoint: {fileID: 5137595390283862149}
   showDebugLogs: 1
+  scaleHitbox: {fileID: 7899485391001861893}
 --- !u!114 &4889175344837434429
 MonoBehaviour:
   m_ObjectHideFlags: 0

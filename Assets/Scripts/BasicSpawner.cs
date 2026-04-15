@@ -62,7 +62,8 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
     public bool HostLocked { get; set; } = false;
     public bool ClientLocked { get; set; } = false;
     public bool MapLocked { get; set; } = false;
-
+    public string HostPlayerName { get; set; } = "Host";
+    public string ClientPlayerName { get; set; } = "Client";
     public List<SessionInfo> LastSessionList { get; private set; } = new List<SessionInfo>();
 
     private void Awake()
@@ -153,7 +154,6 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
             return;
         }
 
-        // Chỉ load scene nếu nó tồn tại
         if (Application.CanStreamedLevelBeLoaded(lobbySceneName))
         {
             SceneManager.LoadScene(lobbySceneName);
@@ -314,29 +314,24 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
         {
             if (_spawnedCharacters.ContainsKey(p)) continue;
 
-            PlayerClass selectedClass = (p == runner.LocalPlayer)
-                ? HostSelectedClass
-                : ClientSelectedClass;
+            PlayerClass selectedClass = (p == runner.LocalPlayer) ? HostSelectedClass : ClientSelectedClass;
+            if (selectedClass == PlayerClass.None) selectedClass = PlayerClass.None;
 
-            if (selectedClass == PlayerClass.None)
-                selectedClass = PlayerClass.None;
+            int index = Mathf.Clamp((int)selectedClass, 0, CharacterPrefabs.Length - 1);
+            Vector2 spawnPos = (p == runner.LocalPlayer) ? HostSpawnPosition : ClientSpawnPosition;
 
-            int index = (int)selectedClass;
-            if (index < 0 || index >= CharacterPrefabs.Length)
-                index = 0;
-
-            Vector2 spawnPos = (p == runner.LocalPlayer)
-                ? HostSpawnPosition
-                : ClientSpawnPosition;
-
-     
             var no = runner.Spawn(CharacterPrefabs[index], spawnPos, Quaternion.identity, p);
+            runner.SetPlayerObject(p, no);
 
+            var controller = no.GetComponent<NetworkedPlayerController>();
 
-            runner.SetPlayerObject(p, no);                   
+            // === FIX TÊN + ISHOST ===
+            controller.IsHost = (p == runner.LocalPlayer);
+            controller.PlayerName = (p == runner.LocalPlayer) ? HostPlayerName : ClientPlayerName;
 
             _spawnedCharacters.Add(p, no);
-            Debug.Log($"Spawned character for player {p} - Class: {selectedClass} at {spawnPos}");
+
+            Debug.Log($"Spawned {controller.PlayerName} | IsHost: {controller.IsHost} | PlayerRef: {p}");
         }
     }
 
@@ -361,7 +356,10 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
             Attack = Input.GetKeyDown(KeyCode.J),        
             Block = Input.GetKeyDown(KeyCode.K),          
             SuperHit = Input.GetKeyDown(KeyCode.I),
-            Shoot = Input.GetKeyDown(KeyCode.U)
+            Shoot = Input.GetKeyDown(KeyCode.U),
+            Flash = Input.GetKeyDown(KeyCode.L),
+            ChargePower = Input.GetKey(KeyCode.H)   // giữ phím H để charge
+
         };
         input.Set(inputData);
     }
@@ -388,6 +386,13 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
             return;
         }
         if (_runner == null || !_runner.IsServer) return;
+
+        if (LobbyStateRef != null)
+        {
+            HostPlayerName = LobbyStateRef.HostPlayerName;  
+            ClientPlayerName = LobbyStateRef.ClientPlayerName;
+            Debug.Log($"[BasicSpawner] Copied names → Host: {HostPlayerName} | Client: {ClientPlayerName}");
+        }
 
         var scene = SceneRef.FromIndex(SelectedMapIndex);
         Debug.Log($"Host đang load game map: buildIndex = {SelectedMapIndex}");

@@ -214,8 +214,6 @@ GameObject:
   - component: {fileID: 95578039183369274}
   - component: {fileID: 50266209291646428}
   - component: {fileID: 61008143179395898}
-  - component: {fileID: 183649112806676190}
-  - component: {fileID: 1046613983158149926}
   m_Layer: 0
   m_Name: Buu
   m_TagString: Player
@@ -397,48 +395,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.27000004, y: 0.7300001}
   m_EdgeRadius: 0
---- !u!114 &183649112806676190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1567465691581190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7be7a8639403fde449d11868f989b893, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerControl
-  rib: {fileID: 0}
-  ani: {fileID: 0}
-  healthy: 100
-  speedMove: 5
-  speedJump: 26
-  damagedHit: 10
-  damagedKick: 10
-  damagedKick2: 15
-  damagedSuperHit: 40
-  damagedShoot: 5
-  power: 100
-  powerHit: 60
-  powerShoot: 40
-  curHealthy: 0
-  curPower: 0
-  isDamaged: 0
-  isFinshFlash: 0
-  gameOverObj: {fileID: 0}
---- !u!114 &1046613983158149926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1567465691581190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb2fd0eabdbb9bd4d87243edb24402b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventAnimation
 --- !u!1 &1640487809952604
 GameObject:
   m_ObjectHideFlags: 0

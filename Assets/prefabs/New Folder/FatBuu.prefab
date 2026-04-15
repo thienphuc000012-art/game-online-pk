@@ -224,15 +224,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dcd213dac0bb68469316a7d34da129e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NetworkedPlayerController
+  _PlayerName: Player
   _CurHealthy: 0
   _CurPower: 10000000
   _IsDamaged: 0
   _IsFacingRight: 1
+  _IsPower: 0
   _NetVelocity: {x: 0, y: 0, z: 0}
+  _NetGrounded: 0
+  _IsHost: 0
   _State: 0
+  _DamageEndTime: 0
+  _PowerRegenRate: 80
   speedMove: 60
   speedJump: 70
+  bulletPrefab:
+    RawGuidValue: 81bb7badba2450e438a45e4d58976c7b
+  bulletSpawnPoint: {fileID: 5780905523730594336}
   showDebugLogs: 1
+  scaleHitbox: {fileID: 8591032181075723087}
 --- !u!114 &-7239629355315501740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -554,7 +564,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8591032181075723087}
   - component: {fileID: 2770832645932207790}
-  - component: {fileID: 6057291538478829306}
+  - component: {fileID: 4093186581842615674}
   m_Layer: 0
   m_Name: scale
   m_TagString: Untagged
@@ -636,7 +646,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!61 &6057291538478829306
+--- !u!61 &4093186581842615674
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -670,7 +680,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.23870294, y: 0}
+  m_Offset: {x: 0.23870285, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.0027023952, y: 0.5}
@@ -680,7 +690,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.48000005, y: 0.30000004}
+  m_Size: {x: 0.48, y: 0.3}
   m_EdgeRadius: 0
 --- !u!1 &8596348264938766153
 GameObject:

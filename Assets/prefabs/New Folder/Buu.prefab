@@ -78,14 +78,14 @@ GameObject:
   m_Component:
   - component: {fileID: 7743342907554449716}
   - component: {fileID: 2712293417106918701}
-  - component: {fileID: 5868922541783736711}
+  - component: {fileID: 3536082919144506037}
   m_Layer: 0
   m_Name: scale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7743342907554449716
 Transform:
   m_ObjectHideFlags: 0
@@ -95,10 +95,11 @@ Transform:
   m_GameObject: {fileID: 1229727057294826595}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.41570273, y: 0.41081086, z: 0}
+  m_LocalPosition: {x: 0.804, y: 0.41081086, z: 0}
   m_LocalScale: {x: 0.9673689, y: 0.9673686, z: 3.5792637}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7956772619648444313}
   m_Father: {fileID: 6271411794625321446}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2712293417106918701
@@ -160,7 +161,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!61 &5868922541783736711
+--- !u!61 &3536082919144506037
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,7 +195,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.23870294, y: 0}
+  m_Offset: {x: 0.23870285, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.0027023952, y: 0.5}
@@ -204,7 +205,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.48000005, y: 0.30000004}
+  m_Size: {x: 0.48, y: 0.3}
   m_EdgeRadius: 0
 --- !u!1 &3128852749217525286
 GameObject:
@@ -243,7 +244,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7743342907554449716}
-  - {fileID: 7956772619648444313}
   - {fileID: 7616168401146175512}
   - {fileID: 8257579996113312139}
   - {fileID: 5894524586222239122}
@@ -362,15 +362,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dcd213dac0bb68469316a7d34da129e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NetworkedPlayerController
+  _PlayerName: Player
   _CurHealthy: 0
   _CurPower: 10000000
   _IsDamaged: 0
   _IsFacingRight: 1
+  _IsPower: 0
   _NetVelocity: {x: 0, y: 0, z: 0}
+  _NetGrounded: 0
+  _IsHost: 0
   _State: 0
+  _DamageEndTime: 0
+  _PowerRegenRate: 80
   speedMove: 60
   speedJump: 70
+  bulletPrefab:
+    RawGuidValue: f035dda0eb0ef7242a405bf2777b8f57
+  bulletSpawnPoint: {fileID: 5894524586222239122}
   showDebugLogs: 1
+  scaleHitbox: {fileID: 7743342907554449716}
 --- !u!114 &-8361799048551698356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -473,7 +483,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8257579996113312139
 Transform:
   m_ObjectHideFlags: 0
@@ -573,7 +583,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7956772619648444313
 Transform:
   m_ObjectHideFlags: 0
@@ -583,11 +593,11 @@ Transform:
   m_GameObject: {fileID: 8101738923045462821}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.9297298, y: 0.40000004, z: 0}
-  m_LocalScale: {x: 0.95387894, y: 0.9538788, z: 3.5293515}
+  m_LocalPosition: {x: 0.531, y: -0.011180948, z: 0}
+  m_LocalScale: {x: 0.98605514, y: 0.9860552, z: 0.98605525}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6271411794625321446}
+  m_Father: {fileID: 7743342907554449716}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8759548588445639323
 SpriteRenderer:

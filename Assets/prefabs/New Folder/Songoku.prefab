@@ -155,15 +155,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dcd213dac0bb68469316a7d34da129e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NetworkedPlayerController
+  _PlayerName: Player
   _CurHealthy: 0
   _CurPower: 10000000
   _IsDamaged: 0
   _IsFacingRight: 1
+  _IsPower: 0
   _NetVelocity: {x: 0, y: 0, z: 0}
+  _NetGrounded: 0
+  _IsHost: 0
   _State: 0
+  _DamageEndTime: 0
+  _PowerRegenRate: 80
   speedMove: 60
   speedJump: 70
+  bulletPrefab:
+    RawGuidValue: ef4fdbf6a69260049ab1d9f702da2e46
+  bulletSpawnPoint: {fileID: 5995322909863557346}
   showDebugLogs: 1
+  scaleHitbox: {fileID: 686933003239275601}
 --- !u!114 &8178896939712314251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,7 +414,7 @@ Transform:
   m_GameObject: {fileID: 2634358716731840933}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.246, y: 0.498, z: 0}
+  m_LocalPosition: {x: 0.257, y: 0.331, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -590,7 +600,7 @@ GameObject:
   m_Component:
   - component: {fileID: 686933003239275601}
   - component: {fileID: 5893920568360067498}
-  - component: {fileID: 6482128168068147554}
+  - component: {fileID: 1369047272498483435}
   m_Layer: 0
   m_Name: Scale
   m_TagString: Untagged
@@ -672,7 +682,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!61 &6482128168068147554
+--- !u!61 &1369047272498483435
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -706,7 +716,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.23870271, y: 0.000000059604645}
+  m_Offset: {x: 0.23870285, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.0027023952, y: 0.5}
@@ -716,5 +726,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.47999996, y: 0.3}
+  m_Size: {x: 0.48, y: 0.3}
   m_EdgeRadius: 0
