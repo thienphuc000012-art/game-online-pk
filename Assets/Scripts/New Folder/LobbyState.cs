@@ -142,11 +142,10 @@ public class LobbyState : NetworkBehaviour
         if (_lobbyManagerCache != null && _lobbyManagerCache.fullCharacterImageHost != null)
         {
             int index = (int)HostSelectedClass;
-            if (index >= 0 && index < _lobbyManagerCache.characterIcons.Length)
+            if (index >= 0 && index < _lobbyManagerCache.fullCharacterSprites.Length)
             {
-                _lobbyManagerCache.fullCharacterImageHost.sprite = _lobbyManagerCache.characterIcons[index].sprite;
-
-                _lobbyManagerCache.fullCharacterImageHost.rectTransform.localScale = new Vector3(1f, 1f, 1f);
+                _lobbyManagerCache.fullCharacterImageHost.sprite = _lobbyManagerCache.fullCharacterSprites[index];
+                _lobbyManagerCache.fullCharacterImageHost.rectTransform.localScale = new Vector3(1f, 1f, 1f); // không flip
             }
         }
     }
@@ -159,13 +158,10 @@ public class LobbyState : NetworkBehaviour
         if (_lobbyManagerCache != null && _lobbyManagerCache.fullCharacterImageClient != null)
         {
             int index = (int)ClientSelectedClass;
-            if (index >= 0 && index < _lobbyManagerCache.characterIcons.Length)
+            if (index >= 0 && index < _lobbyManagerCache.fullCharacterSprites.Length)
             {
-                _lobbyManagerCache.fullCharacterImageClient.sprite = _lobbyManagerCache.characterIcons[index].sprite;
-
-    
-                _lobbyManagerCache.fullCharacterImageClient.rectTransform.localScale = new Vector3(-1f, 1f, 1f);
-
+                _lobbyManagerCache.fullCharacterImageClient.sprite = _lobbyManagerCache.fullCharacterSprites[index];
+                _lobbyManagerCache.fullCharacterImageClient.rectTransform.localScale = new Vector3(-1f, 1f, 1f); // flip ngang
             }
         }
     }
