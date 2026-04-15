@@ -116,7 +116,7 @@ Transform:
   m_GameObject: {fileID: 138387760165535909}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.235, y: 0.388, z: 0}
+  m_LocalPosition: {x: 0.274, y: 0.388, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 64718979056773474}
   - component: {fileID: 5401303402517450952}
   - component: {fileID: 166424846837627144}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SuperSongoku
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -322,9 +322,9 @@ MonoBehaviour:
   _IsHost: 0
   _State: 0
   _DamageEndTime: 0
-  _PowerRegenRate: 80
+  _PowerRegenRate: 70
   speedMove: 60
-  speedJump: 70
+  speedJump: 75
   bulletPrefab:
     RawGuidValue: e73fb332dcd4fa74392dd92cc8b998e2
   bulletSpawnPoint: {fileID: 7749206699518573289}
@@ -381,7 +381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Fusion.Unity::Fusion.NetworkCharacterController
   _stateAuthorityChangeErrorCorrectionDelta: 0
   gravity: -30
-  jumpImpulse: 10
+  jumpImpulse: 20
   acceleration: 30
   braking: 30
   maxSpeed: 20

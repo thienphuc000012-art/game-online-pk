@@ -129,6 +129,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
   speed: 25
   damage: 30
+  hitRadius: 0.7
+  hitLayer:
+    serializedVersion: 2
+    m_Bits: 8
   _Direction: 1
 --- !u!114 &7772813624531157769
 MonoBehaviour:

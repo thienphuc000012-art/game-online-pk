@@ -55,11 +55,11 @@ public class NetworkedPlayerController : NetworkBehaviour
         _ani.SetTrigger("superHit");
         if (showDebugLogs) Debug.Log($"[RPC] 🔥 SUPERHIT animation fired on ALL clients");
     }
-
     [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
     private void RPC_PlayShootAndSpawnBullet()
     {
         _ani.SetTrigger("shoot");
+
         if (Object.HasStateAuthority && bulletPrefab != default(NetworkPrefabRef))
         {
             Vector3 spawnPos = bulletSpawnPoint != null
@@ -67,8 +67,11 @@ public class NetworkedPlayerController : NetworkBehaviour
                 : transform.position + (IsFacingRight ? new Vector3(1.2f, 0.8f, 0f) : new Vector3(-1.2f, 0.8f, 0f));
 
             var bullet = Runner.Spawn(bulletPrefab, spawnPos, Quaternion.identity);
+
             if (bullet.TryGetComponent(out Bullet bulletScript))
-                bulletScript.Initialize(IsFacingRight ? 1 : -1);
+            {
+                bulletScript.Initialize(IsFacingRight ? 1 : -1, Object.InputAuthority);  
+            }
         }
     }
 
@@ -78,7 +81,7 @@ public class NetworkedPlayerController : NetworkBehaviour
     [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
     private void RPC_PlayFlash() => _ani.SetTrigger("flash");
 
-    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    [Rpc(RpcSources.All, RpcTargets.All)]
     public void RPC_TakeDamage(int damage)
     {
         CurHealthy = Mathf.Max(0, CurHealthy - damage);

@@ -4,17 +4,18 @@ using UnityEngine;
 public class Bullet : NetworkBehaviour
 {
     [SerializeField] private float speed = 25f;
-    [SerializeField] private int damage = 30;           // ← Có thể chỉnh sát thương
+    [SerializeField] private int damage = 30;
+    [SerializeField] private float hitRadius = 0.85f;     
+    [SerializeField] private LayerMask hitLayer = ~0;     
 
-    [Networked]
-    public int Direction { get; set; } = 1;
+    [Networked] public int Direction { get; set; } = 1;
+    [Networked] public PlayerRef Shooter { get; set; }     
+    [Networked] private TickTimer _despawnTimer { get; set; }
 
-    [Networked]
-    private TickTimer _despawnTimer { get; set; }
-
-    public void Initialize(int dir)
+    public void Initialize(int dir, PlayerRef shooter)
     {
         Direction = dir;
+        Shooter = shooter;
     }
 
     public override void Spawned()
@@ -24,26 +25,38 @@ public class Bullet : NetworkBehaviour
 
     public override void FixedUpdateNetwork()
     {
-        // Di chuyển đạn
+        if (!Object.HasStateAuthority) return;
+
+
         transform.Translate(Vector3.right * Direction * speed * Runner.DeltaTime);
 
-        // Tự hủy sau 3 giây
+
+        CheckForHit();
+
+
         if (_despawnTimer.Expired(Runner))
         {
             Runner.Despawn(Object);
         }
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (!Object.HasStateAuthority) return;   // Chỉ Server mới gây damage
 
-        var target = other.GetComponent<NetworkedPlayerController>();
-        if (target != null)
+    private void CheckForHit()
+    {
+        Collider[] hits = Physics.OverlapSphere(transform.position, hitRadius, hitLayer);
+
+        foreach (var col in hits)
         {
+            var target = col.GetComponent<NetworkedPlayerController>();
+            if (target == null) continue;
+
+            if (target.Object.InputAuthority == Shooter) continue;
+
+
             target.RPC_TakeDamage(damage);
             Debug.Log($"[BULLET] Đạn trúng {target.PlayerName} - {damage} damage");
 
-            Runner.Despawn(Object);   // Hủy đạn ngay khi trúng
+            Runner.Despawn(Object);
+            return;
         }
     }
 }

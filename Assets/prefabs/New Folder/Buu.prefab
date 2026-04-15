@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: -8361799048551698356}
   - component: {fileID: 8567942129739949893}
   - component: {fileID: 3827012462442276252}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Buu
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -373,9 +373,9 @@ MonoBehaviour:
   _IsHost: 0
   _State: 0
   _DamageEndTime: 0
-  _PowerRegenRate: 80
+  _PowerRegenRate: 70
   speedMove: 60
-  speedJump: 70
+  speedJump: 75
   bulletPrefab:
     RawGuidValue: f035dda0eb0ef7242a405bf2777b8f57
   bulletSpawnPoint: {fileID: 5894524586222239122}
@@ -432,7 +432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Fusion.Unity::Fusion.NetworkCharacterController
   _stateAuthorityChangeErrorCorrectionDelta: 0
   gravity: -30
-  jumpImpulse: 10
+  jumpImpulse: 20
   acceleration: 30
   braking: 30
   maxSpeed: 20
@@ -462,7 +462,7 @@ Transform:
   m_GameObject: {fileID: 3870121105002551764}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.26216218, y: 0.55945957, z: 0}
+  m_LocalPosition: {x: 0.293, y: 0.55945957, z: 0}
   m_LocalScale: {x: 0.2702703, y: 0.2702703, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

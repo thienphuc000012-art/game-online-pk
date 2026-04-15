@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8178896939712314251}
   - component: {fileID: 2248784973254670977}
   - component: {fileID: 3811622354669531075}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Songoku
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -166,9 +166,9 @@ MonoBehaviour:
   _IsHost: 0
   _State: 0
   _DamageEndTime: 0
-  _PowerRegenRate: 80
+  _PowerRegenRate: 70
   speedMove: 60
-  speedJump: 70
+  speedJump: 75
   bulletPrefab:
     RawGuidValue: ef4fdbf6a69260049ab1d9f702da2e46
   bulletSpawnPoint: {fileID: 5995322909863557346}
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Fusion.Unity::Fusion.NetworkCharacterController
   _stateAuthorityChangeErrorCorrectionDelta: 0
   gravity: -30
-  jumpImpulse: 10
+  jumpImpulse: 20
   acceleration: 30
   braking: 30
   maxSpeed: 20
@@ -414,7 +414,7 @@ Transform:
   m_GameObject: {fileID: 2634358716731840933}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.257, y: 0.331, z: 0}
+  m_LocalPosition: {x: 0.255, y: 0.331, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
