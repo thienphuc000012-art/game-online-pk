@@ -52,6 +52,15 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
     [Header("Spawn Positions in Game Scene")]
     public Vector2 HostSpawnPosition = new Vector2(-5f, 0f);
     public Vector2 ClientSpawnPosition = new Vector2(5f, 0f);
+
+    private Vector2 _moveDirection;
+    private bool _jumpPressed;
+    private bool _attackPressed;
+    private bool _blockPressed;
+    private bool _superHitPressed;
+    private bool _shootPressed;
+    private bool _flashPressed;
+    private bool _chargePower;
     public bool IsInlobby { get; private set; }
     public bool IsStartingLobby { get; private set; }
     public bool IsInRoom { get; private set; }
@@ -325,7 +334,6 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
 
             var controller = no.GetComponent<NetworkedPlayerController>();
 
-            // === FIX TÊN + ISHOST ===
             controller.IsHost = (p == runner.LocalPlayer);
             controller.PlayerName = (p == runner.LocalPlayer) ? HostPlayerName : ClientPlayerName;
 
@@ -347,21 +355,39 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
             _spawnedCharacters.Remove(player);
         }
     }
+    private void Update()
+    {
+        if (_runner == null || !_runner.ProvideInput) return;
+        _jumpPressed |= Input.GetKeyDown(KeyCode.Space);
+        _attackPressed |= Input.GetKeyDown(KeyCode.J);
+        _blockPressed |= Input.GetKeyDown(KeyCode.K);
+        _superHitPressed |= Input.GetKeyDown(KeyCode.I);
+        _shootPressed |= Input.GetKeyDown(KeyCode.U);
+        _flashPressed |= Input.GetKeyDown(KeyCode.L);
+
+        _chargePower = Input.GetKey(KeyCode.H);           
+        _moveDirection = new Vector2(Input.GetAxis("Horizontal"), 0);
+    }
+
     public void OnInput(NetworkRunner runner, NetworkInput input)
     {
         var inputData = new NetworkInputData
         {
-            MoveDirection = new Vector2(Input.GetAxis("Horizontal"), 0), 
-            Jump = Input.GetKeyDown(KeyCode.Space),        
-            Attack = Input.GetKeyDown(KeyCode.J),        
-            Block = Input.GetKeyDown(KeyCode.K),          
-            SuperHit = Input.GetKeyDown(KeyCode.I),
-            Shoot = Input.GetKeyDown(KeyCode.U),
-            Flash = Input.GetKeyDown(KeyCode.L),
-            ChargePower = Input.GetKey(KeyCode.H)   // giữ phím H để charge
-
+            MoveDirection = _moveDirection,
+            Jump = _jumpPressed,
+            Attack = _attackPressed,
+            Block = _blockPressed,
+            SuperHit = _superHitPressed,
+            Shoot = _shootPressed,
+            Flash = _flashPressed,
+            ChargePower = _chargePower
         };
+
         input.Set(inputData);
+
+        // RESET edge inputs sau khi đã gửi tick này
+        _jumpPressed = _attackPressed = _blockPressed = false;
+        _superHitPressed = _shootPressed = _flashPressed = false;
     }
     public void HostSelectCharacter(PlayerClass character)
     {
