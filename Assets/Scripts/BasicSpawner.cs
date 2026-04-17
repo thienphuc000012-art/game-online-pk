@@ -345,14 +345,25 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
 
     public void OnPlayerLeft(NetworkRunner runner, PlayerRef player)
     {
-        Debug.Log("Player Left: " + player
-                                      + "Client count: "
-                                      + runner.ActivePlayers.ToList().Count);
+        Debug.Log($"Player Left: {player} | Còn lại: {runner.ActivePlayers.Count()} người");
 
         if (_spawnedCharacters.TryGetValue(player, out var networkObject))
         {
             runner.Despawn(networkObject);
             _spawnedCharacters.Remove(player);
+        }
+
+        // ====================== XỬ LÝ ĐỐI THỦ THOÁT Ở GAME SCENE ======================
+        var currentScene = SceneManager.GetActiveScene();
+        if (currentScene.buildIndex != _lobbyBuildIndex && runner.ActivePlayers.Count() == 1)
+        {
+            // Chỉ người còn lại mới hiển thị WIN
+            if (runner.LocalPlayer != player && _spawnedCharacters.Count > 0)
+            {
+                var btnManager = FindFirstObjectByType<GameButtonManager>();
+                if (btnManager != null)
+                    btnManager.ShowWinBecauseOpponentLeft();
+            }
         }
     }
     private void Update()

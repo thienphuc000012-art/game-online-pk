@@ -7,7 +7,7 @@ public class CameraFollow : MonoBehaviour
 
     [Header("=== SCREEN SHAKE ===")]
     [SerializeField] private float defaultShakeDuration = 0.35f;   // thời gian rung
-    [SerializeField] private float defaultShakeMagnitude = 0.45f;  // độ mạnh rung
+    [SerializeField] private float defaultShakeMagnitude = 0.75f;  // độ mạnh rung
 
     private Transform _target;
     private float _shakeTimeLeft = 0f;

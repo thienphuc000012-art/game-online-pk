@@ -49,7 +49,7 @@ public class NetworkedPlayerController : NetworkBehaviour
     [SerializeField] private GameObject superHitImpactPrefab;
     [SerializeField] private GameObject hitImpactPrefab;
     [SerializeField] private float hitEffectCooldown = 1f;
-    [SerializeField] private GameObject koEffectPrefab;   
+ 
 
     [Header("DEBUG")]
     [SerializeField] private bool showDebugLogs = true;
@@ -59,22 +59,34 @@ public class NetworkedPlayerController : NetworkBehaviour
     private bool _previousFlash = false;
 
     [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
-    private void RPC_PlayHit() => _ani.SetTrigger("hit");
+    private void RPC_PlayHit()
+    {
+        _ani.SetTrigger("hit");
+        SoundManager.Instance?.PlayPunch();          
+       // if (showDebugLogs) Debug.Log($"[RPC] 👊 PUNCH sound + anim fired on ALL clients");
+    }
 
     [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
-    private void RPC_PlayKick() => _ani.SetTrigger("kick");
+    private void RPC_PlayKick()
+    {
+        _ani.SetTrigger("kick");
+        SoundManager.Instance?.PlayKick();            
+       // if (showDebugLogs) Debug.Log($"[RPC] 🦵 KICK sound + anim fired on ALL clients");
+    }
 
     [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
     private void RPC_PlaySuperHit()
     {
         _ani.SetTrigger("superHit");
-        if (showDebugLogs) Debug.Log($"[RPC] 🔥 SUPERHIT animation fired on ALL clients");
+        SoundManager.Instance?.PlaySuperHit();
+       // if (showDebugLogs) Debug.Log($"[RPC] 🔥 SUPERHIT animation fired on ALL clients");
     }
 
     [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
     private void RPC_PlayShootAndSpawnBullet()
     {
         _ani.SetTrigger("shoot");
+        SoundManager.Instance?.PlayShoot();
         if (Object.HasStateAuthority && bulletPrefab != default(NetworkPrefabRef))
         {
             Vector3 spawnPos = bulletSpawnPoint != null
@@ -96,20 +108,22 @@ public class NetworkedPlayerController : NetworkBehaviour
     [Rpc(RpcSources.All, RpcTargets.All)]
     public void RPC_TakeDamage(int damage)
     {
-        if (Runner.SimulationTime < SuperHitEndTime)
+        if (Object.HasStateAuthority)
         {
+            if (Runner.SimulationTime < SuperHitEndTime)
+            {
+                CurHealthy = Mathf.Max(0, CurHealthy - damage);
+                if (CurHealthy <= 0) State = StatePlayer.Die;
+                return;
+            }
+
             CurHealthy = Mathf.Max(0, CurHealthy - damage);
-            Debug.Log($"[SUPERHIT IMMUNE] {PlayerName} bị đánh nhưng KHÔNG hurt animation (còn {CurHealthy} HP)");
+            IsDamaged = true;
+            DamageEndTime = Runner.SimulationTime + 0.6f;
             if (CurHealthy <= 0) State = StatePlayer.Die;
-            return;
         }
 
-        CurHealthy = Mathf.Max(0, CurHealthy - damage);
-        IsDamaged = true;
-        DamageEndTime = Runner.SimulationTime + 0.6f;
-        if (CurHealthy <= 0) State = StatePlayer.Die;
-
-        Debug.Log($"[DAMAGE] {PlayerName} nhận {damage} damage → HP còn {CurHealthy}");
+        Debug.Log($"[DAMAGE] {PlayerName} nhận {damage} damage → HP còn {CurHealthy} (Authority: {Object.HasStateAuthority})");
 
         if (Runner.SimulationTime >= LastHitEffectTime + hitEffectCooldown)
         {
@@ -119,20 +133,12 @@ public class NetworkedPlayerController : NetworkBehaviour
                 _cameraFollow.TriggerShake();
         }
 
-  
         if (CurHealthy <= 0 && State == StatePlayer.Die)
         {
             RPC_PlayDieAnimation();
-            RPC_PlayKOEffect();
-
+            SoundManager.Instance?.PlayKO();
         }
     }
-
-    private System.Collections.IEnumerator ShowEndPanelAfterDelay()
-    {
-        yield return new WaitForSeconds(0.8f);
-    }
-
     public override void Spawned()
     {
         _ncc = GetComponent<NetworkCharacterController>();
@@ -221,13 +227,23 @@ public class NetworkedPlayerController : NetworkBehaviour
         if (input.Attack)
         {
             if (Object.HasInputAuthority) _ani.SetTrigger("hit");
-            if (Object.HasStateAuthority) { RPC_PlayHit(); TryApplyDamage(15); }
+            if (Object.HasStateAuthority)
+            {
+                RPC_PlayHit();           // RPC sẽ tự phát sound + anim cho tất cả
+                TryApplyDamage(15);
+            }
         }
+
         if (input.Block)
         {
             if (Object.HasInputAuthority) _ani.SetTrigger("kick");
-            if (Object.HasStateAuthority) { RPC_PlayKick(); TryApplyDamage(25); }
+            if (Object.HasStateAuthority)
+            {
+                RPC_PlayKick();          // RPC sẽ tự phát sound + anim cho tất cả
+                TryApplyDamage(25);
+            }
         }
+
         if (input.SuperHit && Object.HasInputAuthority && !_previousSuperHit)
             RPC_RequestSuperHit();
 
@@ -365,18 +381,7 @@ public class NetworkedPlayerController : NetworkBehaviour
             _ani.SetTrigger("die");        
     }
 
-    [Rpc(RpcSources.All, RpcTargets.All)]
-    public void RPC_PlayKOEffect()
-    {
-        if (koEffectPrefab != null)
-        {
-            Vector3 spawnPos = transform.position + new Vector3(0, 2.5f, 0f);
-            GameObject ko = Instantiate(koEffectPrefab, spawnPos, Quaternion.identity);
-            Destroy(ko, 3f);
-        }
-        if (showDebugLogs)
-            Debug.Log($"[K.O.] Effect played on {PlayerName}");
-    }
+   
     public void CanUsingSkillSpecial() { }
 
     [SerializeField] private Transform scaleHitbox;
