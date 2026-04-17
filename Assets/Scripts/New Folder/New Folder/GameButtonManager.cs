@@ -28,7 +28,7 @@ public class GameButtonManager : MonoBehaviour
         if (winPanel != null) winPanel.SetActive(false);
      
 
-        Debug.Log("[GameButtonManager] Ready - Quit = Thoát game hoàn toàn");
+       // Debug.Log("[GameButtonManager] Ready - Quit = Thoát game hoàn toàn");
     }
 
   
@@ -56,7 +56,7 @@ public class GameButtonManager : MonoBehaviour
 
     public async void RematchClicked()
     {
-        Debug.Log("[GameButtonManager] RematchClicked → Quay về Lobby");
+       // Debug.Log("[GameButtonManager] RematchClicked → Quay về Lobby");
         if (_spawner != null)
         {
             await _spawner.LeaveRoomAndReturnToLobby();
@@ -68,7 +68,7 @@ public class GameButtonManager : MonoBehaviour
         if (_alreadyHandledDisconnect) return;
         _alreadyHandledDisconnect = true;
 
-        Debug.Log("[GameButtonManager] Đối thủ thoát → Hiển thị WIN");
+       // Debug.Log("[GameButtonManager] Đối thủ thoát → Hiển thị WIN");
 
         if (winPanel != null)
         {

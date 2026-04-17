@@ -2685,7 +2685,6 @@ MonoBehaviour:
   quitButton: {fileID: 0}
   rematchButton: {fileID: 0}
   winPanel: {fileID: 1551044341}
-  losePanel: {fileID: 1836867867}
 --- !u!4 &1345202802
 Transform:
   m_ObjectHideFlags: 0
@@ -3201,7 +3200,7 @@ MonoBehaviour:
   bgmSource: {fileID: 0}
   punchClip: {fileID: 8300000, guid: f3ccefb0d00ac2244ab5a904d7c73fa1, type: 3}
   kickClip: {fileID: 8300000, guid: 5af7d52ddb3324242a51a340e4df5b92, type: 3}
-  superHitClip: {fileID: 8300000, guid: dd0bd2cbcdf64524db05fbe303d603ca, type: 3}
+  superHitClip: {fileID: 8300000, guid: d6383c83264196a458b5e3adc2064ede, type: 3}
   shootClip: {fileID: 8300000, guid: 3a88a2dc58fb35242aa004861e228bd4, type: 3}
   koClip: {fileID: 8300000, guid: c71f781e767650a4f8c44f0e4d16e5b5, type: 3}
   backgroundMusic: {fileID: 8300000, guid: 984c7aaf37da13246beba77aa57ab8d0, type: 3}
