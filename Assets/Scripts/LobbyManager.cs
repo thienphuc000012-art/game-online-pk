@@ -41,7 +41,8 @@ public class LobbyManager : MonoBehaviour
 
     public bool IsHost;
     public BasicSpawner spawner;
-
+    [Header("=== FULL CHARACTER SPRITES (hình lớn) ===")]
+    public Sprite[] fullCharacterSprites;   // Kéo thả sprite full vào đây trong Inspector
     async void Start()
     {
         panelLobby.SetActive(true);
@@ -155,15 +156,16 @@ public class LobbyManager : MonoBehaviour
     public void OnClickCharacterIcon(int index)
     {
         var selectedClass = (PlayerClass)index;
+
+        // === SỬA Ở ĐÂY ===
         if (IsHost)
-            fullCharacterImageHost.sprite = characterIcons[index].sprite;
+            fullCharacterImageHost.sprite = fullCharacterSprites[index];
         else
-            fullCharacterImageClient.sprite = characterIcons[index].sprite;
+            fullCharacterImageClient.sprite = fullCharacterSprites[index];
 
         if (spawner.LobbyStateRef != null)
             spawner.LobbyStateRef.RPC_SetSelectedClass(selectedClass, IsHost);
     }
-
     public void OnClickMapIcon(int index)
     {
         if (!IsHost) return;
