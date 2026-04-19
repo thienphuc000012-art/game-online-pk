@@ -26,10 +26,10 @@ public class GameUI : MonoBehaviour
     private KOEffectUI _koEffectUI;
 
     [Header("=== SOUND SETTINGS PANEL ===")]
-    public GameObject soundPanel;      // Panel chứa slider
-    public Button soundButton;         // Nút mở panel
-    public Slider sfxSlider;           // Slider SFX
-    public Slider bgmSlider;           // Slider BGM
+    public GameObject soundPanel;     
+    public Button soundButton;         
+    public Slider sfxSlider;           
+    public Slider bgmSlider;          
 
     private NetworkedPlayerController _hostPlayer;
     private NetworkedPlayerController _clientPlayer;
@@ -42,22 +42,19 @@ public class GameUI : MonoBehaviour
 
     private void Start()
     {
-        // Ẩn panel win/lose
+
         if (winPanel != null) winPanel.SetActive(false);
         if (losePanel != null) losePanel.SetActive(false);
 
-        // Setup K.O.
+
         if (koImage != null)
             _koEffectUI = koImage.GetComponent<KOEffectUI>();
 
-        // ==================== SETUP SOUND PANEL ====================
-        if (soundPanel != null) soundPanel.SetActive(false);   // Ẩn panel lúc đầu
+        if (soundPanel != null) soundPanel.SetActive(false);   
 
-        // Gán sự kiện cho Button
         if (soundButton != null)
             soundButton.onClick.AddListener(ToggleSoundPanel);
 
-        // Gán sự kiện cho Slider
         if (sfxSlider != null)
             sfxSlider.onValueChanged.AddListener(OnSFXVolumeChanged);
         if (bgmSlider != null)

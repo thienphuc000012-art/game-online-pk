@@ -24,6 +24,8 @@ public class NetworkedPlayerController : NetworkBehaviour
     [Networked] public Vector3 NetVelocity { get; set; }
     [Networked] public bool NetGrounded { get; set; }
     [Networked] public bool IsHost { get; set; }
+    [Networked] public bool IsSuperHitting { get; set; } = false;
+
 
     public enum StatePlayer { Normal, Damaged, Die }
     [Networked] public StatePlayer State { get; set; } = StatePlayer.Normal;
@@ -31,9 +33,14 @@ public class NetworkedPlayerController : NetworkBehaviour
     [Networked] public float PowerRegenRate { get; set; } = 80f;
     [Networked] public float SuperHitEndTime { get; set; } = 0f;
     [Networked] public float LastHitEffectTime { get; set; } = 1f;
+    [Networked] public float NextPunchTime { get; set; } = 0f;
+    [Networked] public float NextKickTime { get; set; } = 0f;
 
     [Header("SuperHit Settings")]
     [SerializeField] private float superHitDuration = 1.2f;
+
+    private const float PunchCooldown = 0.5f;   
+    private const float KickCooldown = 1f;  
 
     [Header("Movement & Jump Settings")]
     [SerializeField] private float speedMove = 9f;
@@ -43,7 +50,7 @@ public class NetworkedPlayerController : NetworkBehaviour
     [SerializeField] private NetworkPrefabRef bulletPrefab;
     [SerializeField] private Transform bulletSpawnPoint;
 
-    [Header("P1 P2 Label Above Head - CHỈ KÉO TMP_Text")]
+    [Header("P1 P2 Label Above Head t")]
     [SerializeField] private TMP_Text nameTagText;
     [Header("=== EFFECTS ===")]
     [SerializeField] private GameObject superHitImpactPrefab;
@@ -63,7 +70,7 @@ public class NetworkedPlayerController : NetworkBehaviour
     {
         _ani.SetTrigger("hit");
         SoundManager.Instance?.PlayPunch();          
-       // if (showDebugLogs) Debug.Log($"[RPC] 👊 PUNCH sound + anim fired on ALL clients");
+       // if (showDebugLogs) Debug.Log($"[RPC]  PUNCH sound + anim fired on ALL clients");
     }
 
     [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
@@ -71,7 +78,7 @@ public class NetworkedPlayerController : NetworkBehaviour
     {
         _ani.SetTrigger("kick");
         SoundManager.Instance?.PlayKick();            
-       // if (showDebugLogs) Debug.Log($"[RPC] 🦵 KICK sound + anim fired on ALL clients");
+       // if (showDebugLogs) Debug.Log($"[RPC]  KICK sound + anim fired on ALL clients");
     }
 
     [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
@@ -79,7 +86,7 @@ public class NetworkedPlayerController : NetworkBehaviour
     {
         _ani.SetTrigger("superHit");
         SoundManager.Instance?.PlaySuperHit();
-       // if (showDebugLogs) Debug.Log($"[RPC] 🔥 SUPERHIT animation fired on ALL clients");
+       // if (showDebugLogs) Debug.Log($"[RPC]  SUPERHIT animation fired on ALL clients");
     }
 
     [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
@@ -137,6 +144,7 @@ public class NetworkedPlayerController : NetworkBehaviour
         {
             RPC_PlayDieAnimation();
             SoundManager.Instance?.PlayKO();
+            SoundManager.Instance?.StopBGM();
         }
     }
     public override void Spawned()
@@ -162,7 +170,9 @@ public class NetworkedPlayerController : NetworkBehaviour
         IsPower = false;
         NetGrounded = true;
         LastHitEffectTime = 0f;
-
+        IsSuperHitting = false;
+        NextPunchTime = 0f;      
+        NextKickTime = 0f;
         if (scaleHitbox != null)
         {
             scaleHitbox.gameObject.SetActive(false);
@@ -210,6 +220,11 @@ public class NetworkedPlayerController : NetworkBehaviour
             NetVelocity = _ncc.Velocity;
             NetGrounded = _ncc.Grounded;
         }
+        if (Object.HasStateAuthority && IsSuperHitting && Runner.SimulationTime >= SuperHitEndTime)
+        {
+            IsSuperHitting = false;
+            SuperHit_Deactivate();         
+        }
     }
 
     private void UpdateFacing(float moveX)
@@ -226,20 +241,19 @@ public class NetworkedPlayerController : NetworkBehaviour
     {
         if (input.Attack)
         {
-            if (Object.HasInputAuthority) _ani.SetTrigger("hit");
-            if (Object.HasStateAuthority)
+            if (Object.HasStateAuthority && Runner.SimulationTime >= NextPunchTime)
             {
-                RPC_PlayHit();           // RPC sẽ tự phát sound + anim cho tất cả
+                NextPunchTime = Runner.SimulationTime + PunchCooldown;
+                RPC_PlayHit();          
                 TryApplyDamage(15);
             }
         }
-
         if (input.Block)
         {
-            if (Object.HasInputAuthority) _ani.SetTrigger("kick");
-            if (Object.HasStateAuthority)
+            if (Object.HasStateAuthority && Runner.SimulationTime >= NextKickTime)
             {
-                RPC_PlayKick();          // RPC sẽ tự phát sound + anim cho tất cả
+                NextKickTime = Runner.SimulationTime + KickCooldown;
+                RPC_PlayKick();          
                 TryApplyDamage(25);
             }
         }
@@ -317,7 +331,10 @@ public class NetworkedPlayerController : NetworkBehaviour
         {
             CurPower -= 60;
             if (Object.HasStateAuthority)
+            {
                 SuperHitEndTime = Runner.SimulationTime + superHitDuration;
+                IsSuperHitting = true;
+            }
             RPC_PlaySuperHit();
         }
     }

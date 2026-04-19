@@ -20,7 +20,7 @@ public class SoundManager : MonoBehaviour
 
     [Header("=== SETTINGS ===")]
     [Range(0f, 1f)] public float sfxVolume = 1f;
-    [Range(0f, 1f)] public float bgmVolume = 1f;   // Đã mặc định 100%
+    [Range(0f, 1f)] public float bgmVolume = 1f;   
 
     [SerializeField] private bool randomPitch = true;
 
@@ -35,20 +35,16 @@ public class SoundManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        // Tạo AudioSource nếu chưa có
+
         if (sfxSource == null) sfxSource = gameObject.AddComponent<AudioSource>();
         if (bgmSource == null) bgmSource = gameObject.AddComponent<AudioSource>();
-
-        // ==================== FORCE DEFAULT VOLUME ====================
-        bgmVolume = 1f;   // Luôn bắt đầu 100% như bạn yêu cầu
-        // sfxVolume = 1f; // (có thể bật nếu muốn SFX cũng luôn 100%)
+        bgmVolume = 1f;   
+        // sfxVolume = 1f; 
 
         sfxSource.volume = sfxVolume;
         bgmSource.volume = bgmVolume;
         bgmSource.loop = true;
     }
-
-    // ====================== CÁC HÀM CHƠI ÂM THANH ======================
     public void PlayPunch() => PlaySFX(punchClip, 0.95f, 1.05f);
     public void PlayKick() => PlaySFX(kickClip, 0.9f, 1.1f);
     public void PlaySuperHit() => PlaySFX(superHitClip, 0.95f, 1.05f);
@@ -66,7 +62,6 @@ public class SoundManager : MonoBehaviour
 
     public void StopBGM() => bgmSource?.Stop();
 
-    // ====================== HÀM HỖ TRỢ ======================
     private void PlaySFX(AudioClip clip, float minPitch = 1f, float maxPitch = 1f)
     {
         if (clip == null || sfxSource == null) return;
@@ -78,8 +73,6 @@ public class SoundManager : MonoBehaviour
 
         sfxSource.PlayOneShot(clip);
     }
-
-    // ====================== HÀM ĐIỀU CHỈNH VOLUME TỪ UI ======================
     public void SetSFXVolume(float value)
     {
         sfxVolume = Mathf.Clamp01(value);

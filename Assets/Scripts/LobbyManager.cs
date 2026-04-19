@@ -235,7 +235,6 @@ public class LobbyManager : MonoBehaviour
 
     private IEnumerator SendPlayerNameCoroutine()
     {
-        // Đợi 2 frame để LobbyStateRef được gán trên client
         yield return null;
         yield return null;
 
@@ -254,7 +253,6 @@ public class LobbyManager : MonoBehaviour
             }
         }
     }
-    // =========================================================================
 
     private void SetupLockButtons()
     {
@@ -270,7 +268,7 @@ public class LobbyManager : MonoBehaviour
     }
     private void UpdateSelectionInteractables()
 {
-    // Gọi UpdateLockUI() của LobbyState để đồng bộ
+
     if (spawner != null && spawner.LobbyStateRef != null)
         spawner.LobbyStateRef.ForceRefreshUI();
 }

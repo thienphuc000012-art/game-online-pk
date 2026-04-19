@@ -374,7 +374,7 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
         _blockPressed |= Input.GetKeyDown(KeyCode.K);
         _superHitPressed |= Input.GetKeyDown(KeyCode.I);
         _shootPressed |= Input.GetKeyDown(KeyCode.U);
-        _flashPressed |= Input.GetKeyDown(KeyCode.L);
+        _flashPressed |= Input.GetKeyDown(KeyCode.LeftShift);
 
         _chargePower = Input.GetKey(KeyCode.H);           
         _moveDirection = new Vector2(Input.GetAxis("Horizontal"), 0);
@@ -396,7 +396,6 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
 
         input.Set(inputData);
 
-        // RESET edge inputs sau khi đã gửi tick này
         _jumpPressed = _attackPressed = _blockPressed = false;
         _superHitPressed = _shootPressed = _flashPressed = false;
     }

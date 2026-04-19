@@ -234,11 +234,14 @@ MonoBehaviour:
   _NetVelocity: {x: 0, y: 0, z: 0}
   _NetGrounded: 0
   _IsHost: 0
+  _IsSuperHitting: 0
   _State: 0
   _DamageEndTime: 0
   _PowerRegenRate: 70
   _SuperHitEndTime: 0
   _LastHitEffectTime: 0
+  _NextPunchTime: 0
+  _NextKickTime: 0
   superHitDuration: 1.2
   speedMove: 60
   speedJump: 75
@@ -249,7 +252,6 @@ MonoBehaviour:
   superHitImpactPrefab: {fileID: 26706914436124791, guid: 7e25ff8b3d635e041a2f5dce980f5fb3, type: 3}
   hitImpactPrefab: {fileID: 6896300976943778734, guid: 5c0efc6ba3f48e04884f3b2addf569b7, type: 3}
   hitEffectCooldown: 1
-  koEffectPrefab: {fileID: 3395750902096029903, guid: 037f28a23ff47df448ee3cda41aae357, type: 3}
   showDebugLogs: 0
   scaleHitbox: {fileID: 8591032181075723087}
 --- !u!114 &-7239629355315501740
