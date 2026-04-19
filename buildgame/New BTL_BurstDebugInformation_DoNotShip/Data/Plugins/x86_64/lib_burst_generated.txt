@@ -11,7 +11,7 @@ Library: D:\Downloads\unity-dragon-ball-master\unity-dragon-ball-master\Temp\Bur
 --linker-options=PdbAltPath="New BTL_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=D:\Downloads\unity-dragon-ball-master\unity-dragon-ball-master\Temp\Burst
---key-folder=D:/New folder (2)/6000.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
+--key-folder=D:/New folder (2)/6000.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
 --decode-folder=D:\Downloads\unity-dragon-ball-master\unity-dragon-ball-master\Library\Burst
 --output=D:\Downloads\unity-dragon-ball-master\unity-dragon-ball-master\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
@@ -85,7 +85,7 @@ Library: D:\Downloads\unity-dragon-ball-master\unity-dragon-ball-master\Temp\Bur
 --linker-options=PdbAltPath="New BTL_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=D:\Downloads\unity-dragon-ball-master\unity-dragon-ball-master\Temp\Burst
---key-folder=D:/New folder (2)/6000.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
+--key-folder=D:/New folder (2)/6000.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
 --decode-folder=D:\Downloads\unity-dragon-ball-master\unity-dragon-ball-master\Library\Burst
 --output=D:\Downloads\unity-dragon-ball-master\unity-dragon-ball-master\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
