@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameButtonManager : MonoBehaviour
 {
-    public Button quitButton;      
+    public Button backToMenuButton;      
     public Button rematchButton;   
     public GameObject winPanel;
 
@@ -26,11 +26,9 @@ public class GameButtonManager : MonoBehaviour
     }
 
   
-    public async void QuitClicked()
+    public async void BackToMenuClicked()
     {
-
-    
-        if (_spawner != null && _spawner.gameObject != null)
+        if (_spawner != null && _spawner.LobbyStateRef != null)
         {
             var runner = _spawner.GetComponent<NetworkRunner>();
             if (runner != null)
@@ -39,12 +37,8 @@ public class GameButtonManager : MonoBehaviour
                 Destroy(runner);
             }
         }
-
-        Application.Quit();
-
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#endif
+        // load scene Main memu
+        SceneManager.LoadScene(0);
     }
 
     public async void RematchClicked()

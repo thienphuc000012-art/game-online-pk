@@ -43,6 +43,17 @@ public class LobbyManager : MonoBehaviour
     public BasicSpawner spawner;
     [Header("=== FULL CHARACTER SPRITES (hình lớn) ===")]
     public Sprite[] fullCharacterSprites;   // Kéo thả sprite full vào đây trong Inspector
+    private void Awake()
+    {
+
+        // 🔥 đảm bảo không dùng reference cũ
+        spawner = FindFirstObjectByType<BasicSpawner>();
+
+        if (spawner != null)
+        {
+            spawner.LobbyManager = this; // overwrite lại
+        }
+    }
     async void Start()
     {
         panelLobby.SetActive(true);
@@ -63,13 +74,27 @@ public class LobbyManager : MonoBehaviour
         for (int i = 0; i < characterIcons.Length; i++)
         {
             int index = i;
-            characterIcons[i].GetComponent<Button>().onClick.AddListener(() => OnClickCharacterIcon(index));
+
+            if (characterIcons[i] == null) continue;
+
+            var btn = characterIcons[i].GetComponent<Button>();
+            if (btn == null) continue;
+
+            btn.onClick.RemoveAllListeners(); // 🔥 tránh duplicate
+            btn.onClick.AddListener(() => OnClickCharacterIcon(index));
         }
 
         for (int i = 0; i < mapIcons.Length; i++)
         {
             int index = i;
-            mapIcons[i].GetComponent<Button>().onClick.AddListener(() => OnClickMapIcon(index));
+
+            if (mapIcons[i] == null) continue;
+
+            var btn = mapIcons[i].GetComponent<Button>();
+            if (btn == null) continue;
+
+            btn.onClick.RemoveAllListeners();
+            btn.onClick.AddListener(() => OnClickMapIcon(index));
         }
     }
 
@@ -133,7 +158,10 @@ public class LobbyManager : MonoBehaviour
 
             // ====================== FIX STALE REFERENCE ======================
             // Không capture "spawner" cũ nữa → luôn tìm spawner mới nhất
-            roomItem.GetComponentInChildren<Button>().onClick.AddListener(async () =>
+            var btn = roomItem.GetComponentInChildren<Button>();
+
+                btn.onClick.RemoveAllListeners(); // 🔥 cực quan trọng
+                btn.onClick.AddListener(async () =>
             {
                 var currentSpawner = FindFirstObjectByType<BasicSpawner>();
                 if (currentSpawner == null)
@@ -209,6 +237,7 @@ public class LobbyManager : MonoBehaviour
 
         foreach (var icon in mapIcons)
         {
+            if (icon == null) continue;
             var btn = icon.GetComponent<Button>();
             if (btn != null) btn.interactable = IsHost;
         }
@@ -267,9 +296,9 @@ public class LobbyManager : MonoBehaviour
         startGameButton.onClick.AddListener(() => spawner.StartGameAfterSelection());
     }
     private void UpdateSelectionInteractables()
-{
+    {
 
-    if (spawner != null && spawner.LobbyStateRef != null)
-        spawner.LobbyStateRef.ForceRefreshUI();
-}
+        if (spawner != null && spawner.LobbyStateRef != null)
+            spawner.LobbyStateRef.ForceRefreshUI();
+    }
 }
