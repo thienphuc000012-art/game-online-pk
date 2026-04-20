@@ -28,6 +28,10 @@ MonoBehaviour:
     m_path: Assets/Scene/m1.unity
   - m_enabled: 1
     m_path: Assets/Scene/m2.unity
+  - m_enabled: 1
+    m_path: Assets/Scene/m3.unity
+  - m_enabled: 1
+    m_path: Assets/Scene/m4.unity
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:

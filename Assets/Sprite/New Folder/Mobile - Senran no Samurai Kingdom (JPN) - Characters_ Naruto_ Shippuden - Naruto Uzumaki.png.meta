@@ -1,0 +1,1321 @@
+fileFormatVersion: 2
+guid: e672217e8964b8b4c926cd0190f832a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -463335012794641558
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_0
+  - first:
+      213: 4978280719126424602
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_1
+  - first:
+      213: -7267948926000048507
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_2
+  - first:
+      213: -1630598576519838766
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_3
+  - first:
+      213: 533921282358433723
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_4
+  - first:
+      213: 2070401395368409377
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_5
+  - first:
+      213: -4414008151079758562
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_6
+  - first:
+      213: -188046929008212104
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_7
+  - first:
+      213: 7118195352667589315
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_8
+  - first:
+      213: 5608049870261371886
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_9
+  - first:
+      213: -4190590072042301090
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_10
+  - first:
+      213: -5514029771309058816
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_11
+  - first:
+      213: -8318801455379933711
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_12
+  - first:
+      213: 814949335423463405
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_13
+  - first:
+      213: -5519998745826679161
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_14
+  - first:
+      213: -7593032618821657248
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_15
+  - first:
+      213: -8029492828445604135
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_16
+  - first:
+      213: 438276513967455289
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_17
+  - first:
+      213: 1704270493733677382
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_18
+  - first:
+      213: -8949649901437101873
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_19
+  - first:
+      213: 1312868688750941106
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_20
+  - first:
+      213: -669078150338917569
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_21
+  - first:
+      213: 3566168341404340895
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_22
+  - first:
+      213: 945528695569560712
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_23
+  - first:
+      213: -3652961915066865570
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_24
+  - first:
+      213: 1602088653027034820
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_25
+  - first:
+      213: 2479696267677909870
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_26
+  - first:
+      213: 273519508287962288
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_27
+  - first:
+      213: -4576456320884066079
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_28
+  - first:
+      213: -7108890589311161259
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_29
+  - first:
+      213: -6768386693369935115
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_30
+  - first:
+      213: 1893711289426098976
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_31
+  - first:
+      213: 763134784011234690
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_32
+  - first:
+      213: -2177739817895346254
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_33
+  - first:
+      213: 4993462607819397283
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_34
+  - first:
+      213: 6396159754415244242
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_35
+  - first:
+      213: 3406647936433507202
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_36
+  - first:
+      213: 1874467875652295867
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_37
+  - first:
+      213: 5957591766705226905
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_38
+  - first:
+      213: -8855010034777115359
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_39
+  - first:
+      213: 1178093887360402196
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_40
+  - first:
+      213: 7465459697005897951
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_41
+  - first:
+      213: -7662807414235361951
+    second: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+      - Naruto Uzumaki_42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 298
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a63df5eb247e199f0800000000000000
+      internalID: -463335012794641558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_1
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 298
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ce4bf10f7661540800000000000000
+      internalID: 4978280719126424602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_2
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 343
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 586d51485fe032b90800000000000000
+      internalID: -7267948926000048507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_3
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 298
+        width: 41
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d30743eb33fe59e0800000000000000
+      internalID: -1630598576519838766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_4
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 351
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb7def4d39ed86700800000000000000
+      internalID: 533921282358433723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_5
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 347
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1293861891b8bbc10800000000000000
+      internalID: 2070401395368409377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_6
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 355
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e15563719fa4eb2c0800000000000000
+      internalID: -4414008151079758562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_7
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 351
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877cc5b705ce36df0800000000000000
+      internalID: -188046929008212104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_8
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 345
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca869d95f8e8c260800000000000000
+      internalID: 7118195352667589315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_9
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 298
+        width: 52
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee3ca9fe4abc3dd40800000000000000
+      internalID: 5608049870261371886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_10
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 295
+        width: 102
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e59d3ac388808d5c0800000000000000
+      internalID: -4190590072042301090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_11
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 326
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 005f138332b3a73b0800000000000000
+      internalID: -5514029771309058816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_12
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 330
+        width: 7
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f59317b62ead8c80800000000000000
+      internalID: -8318801455379933711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_13
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 316
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def2bdf4a184f4b00800000000000000
+      internalID: 814949335423463405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_14
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 329
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 786266a03660563b0800000000000000
+      internalID: -5519998745826679161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_15
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 298
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d5e23101120a690800000000000000
+      internalID: -7593032618821657248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_16
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 328
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d604f980d2819090800000000000000
+      internalID: -8029492828445604135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_17
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 312
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93c3d68da22151600800000000000000
+      internalID: 438276513967455289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_18
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 320
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 649ec240cf8c6a710800000000000000
+      internalID: 1704270493733677382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_19
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 293
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc85bb8f4d47cc380800000000000000
+      internalID: -8949649901437101873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_20
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 293
+        width: 63
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b39bb5dd1f383210800000000000000
+      internalID: 1312868688750941106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_21
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 290
+        width: 78
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3bc21a97f4f6b6f0800000000000000
+      internalID: -669078150338917569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_22
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 178
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9256ae46339d7130800000000000000
+      internalID: 3566168341404340895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_23
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 248
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 884bc58c6513f1d00800000000000000
+      internalID: 945528695569560712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_24
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 198
+        width: 46
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e58a8621e721e4dc0800000000000000
+      internalID: -3652961915066865570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_25
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 199
+        width: 42
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c64c564423cb3610800000000000000
+      internalID: 1602088653027034820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_26
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 194
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e63cdc11e96a96220800000000000000
+      internalID: 2479696267677909870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_27
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 207
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bcb4aa2b8cbbc300800000000000000
+      internalID: 273519508287962288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_28
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 178
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e83d9729392d70c0800000000000000
+      internalID: -4576456320884066079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_29
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 178
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55cadfc6ca5285d90800000000000000
+      internalID: -7108890589311161259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_30
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 213
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fa443fa92cd112a0800000000000000
+      internalID: -6768386693369935115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_31
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 210
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02bb3696260d74a10800000000000000
+      internalID: 1893711289426098976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_32
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 178
+        width: 49
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28debb4fa03379a00800000000000000
+      internalID: 763134784011234690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_33
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 191
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bfbf1d7c2d17c1e0800000000000000
+      internalID: -2177739817895346254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_34
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 178
+        width: 55
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a8554a09c75c4540800000000000000
+      internalID: 4993462607819397283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_35
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 61
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d302988869b3c850800000000000000
+      internalID: 6396159754415244242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_36
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 61
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28bcfedbf38d64f20800000000000000
+      internalID: 3406647936433507202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_37
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 62
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbcd22ff992730a10800000000000000
+      internalID: 1874467875652295867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_38
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 61
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 994c14ba52e9da250800000000000000
+      internalID: 5957591766705226905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_39
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 60
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 125379a0a4fac1580800000000000000
+      internalID: -8855010034777115359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_40
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 61
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4130d24162e695010800000000000000
+      internalID: 1178093887360402196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_41
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 60
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd8280d6a04aa9760800000000000000
+      internalID: 7465459697005897951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden
+        - Naruto Uzumaki_42
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 78
+        width: 46
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16d854c814d38a590800000000000000
+      internalID: -7662807414235361951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_0: -463335012794641558
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_1: 4978280719126424602
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_10: -4190590072042301090
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_11: -5514029771309058816
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_12: -8318801455379933711
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_13: 814949335423463405
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_14: -5519998745826679161
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_15: -7593032618821657248
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_16: -8029492828445604135
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_17: 438276513967455289
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_18: 1704270493733677382
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_19: -8949649901437101873
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_2: -7267948926000048507
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_20: 1312868688750941106
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_21: -669078150338917569
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_22: 3566168341404340895
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_23: 945528695569560712
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_24: -3652961915066865570
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_25: 1602088653027034820
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_26: 2479696267677909870
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_27: 273519508287962288
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_28: -4576456320884066079
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_29: -7108890589311161259
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_3: -1630598576519838766
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_30: -6768386693369935115
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_31: 1893711289426098976
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_32: 763134784011234690
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_33: -2177739817895346254
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_34: 4993462607819397283
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_35: 6396159754415244242
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_36: 3406647936433507202
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_37: 1874467875652295867
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_38: 5957591766705226905
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_39: -8855010034777115359
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_4: 533921282358433723
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_40: 1178093887360402196
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_41: 7465459697005897951
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_42: -7662807414235361951
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_5: 2070401395368409377
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_6: -4414008151079758562
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_7: -188046929008212104
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_8: 7118195352667589315
+      Mobile - Senran no Samurai Kingdom (JPN) - Characters_ Naruto_ Shippuden - Naruto Uzumaki_9: 5608049870261371886
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
