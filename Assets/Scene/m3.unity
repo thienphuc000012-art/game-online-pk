@@ -757,7 +757,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300012, guid: ab7a2b6d83c1e54479943b7160304296, type: 3}
+  m_Sprite: {fileID: 21300016, guid: ab7a2b6d83c1e54479943b7160304296, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3994,7 +3994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b098b7ccaa4882d4eaf17d52566c6ff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameButtonManager
-  quitButton: {fileID: 0}
+  backToMenuButton: {fileID: 0}
   rematchButton: {fileID: 0}
   winPanel: {fileID: 1551044341}
 --- !u!4 &1345202802
@@ -4704,7 +4704,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300012, guid: ab7a2b6d83c1e54479943b7160304296, type: 3}
+  m_Sprite: {fileID: 21300016, guid: ab7a2b6d83c1e54479943b7160304296, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
