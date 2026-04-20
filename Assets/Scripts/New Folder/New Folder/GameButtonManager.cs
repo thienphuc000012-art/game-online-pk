@@ -48,7 +48,15 @@ public class GameButtonManager : MonoBehaviour
             await _spawner.LeaveRoomAndReturnToLobby();
         }
     }
-
+    public async void QuitClicked()
+    {
+        if (_spawner != null && _spawner.gameObject != null) { var runner = _spawner.GetComponent<NetworkRunner>(); 
+        if (runner != null) { await runner.Shutdown(); Destroy(runner); } }
+        Application.Quit(); 
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false; 
+        #endif
+    }
     public void ShowWinBecauseOpponentLeft()
     {
         if (_alreadyHandledDisconnect) return;
