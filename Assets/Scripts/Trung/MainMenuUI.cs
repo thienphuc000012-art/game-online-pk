@@ -5,6 +5,7 @@ public class MainMenuUI : MonoBehaviour
 {
     public GameObject mainmenuPanel;
     public GameObject optionsPanel;
+    public GameObject tutorialPanel;
     public VolumeUI volumeUI;
     public void StartGame()
     {
@@ -27,6 +28,16 @@ public class MainMenuUI : MonoBehaviour
         volumeUI.RevertVolume();
         optionsPanel.SetActive(false);
         mainmenuPanel.SetActive(true);
+    }
+    public void OpenTutorial()
+    {
+        optionsPanel.SetActive(false);
+        tutorialPanel.SetActive(true);
+    }
+    public void BackToOptionsFromTutorial()
+    {
+        tutorialPanel.SetActive(false);
+        optionsPanel.SetActive(true);
     }
     public void QuitGame()
     {
