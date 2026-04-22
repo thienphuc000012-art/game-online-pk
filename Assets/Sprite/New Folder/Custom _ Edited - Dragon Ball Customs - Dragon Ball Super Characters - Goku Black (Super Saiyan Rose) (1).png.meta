@@ -1,0 +1,747 @@
+fileFormatVersion: 2
+guid: 992c746a43413df488fdb0adb0ebd90d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1243687138540209913
+    second: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+      - Goku Black (Super Saiyan Rose) (1)_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 897
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f64968fcd6724110800000000000000
+      internalID: 1243687138540209913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 894
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bcc2b295e0e9e344ae863ee132d5dfd
+      internalID: -420504498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_2
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 894
+        width: 31
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76608493f3452e4281ed26d9f544f80
+      internalID: -1049024636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_3
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 893
+        width: 26
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7492d0f472bc49a47a18d36ac0eda740
+      internalID: -1402215645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_4
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 895
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bfebf707ddfb2c48b8f29b5a0d40c59
+      internalID: 1489644679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_5
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 894
+        width: 38
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f547695d31fc24080d27e43c326cb7
+      internalID: -1259764638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_6
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 895
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a7086fae52d0b4f86de6d20a3fda8e
+      internalID: 1938622351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_7
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 895
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c628d199d0d2d409eb6b04cb483e86
+      internalID: -127207996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_8
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 895
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61000fef939dab418965789cc467983
+      internalID: 1535194335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_9
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 895
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4cbffedd7972fb4e90b3af1489d228e
+      internalID: 217817216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_10
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 895
+        width: 25
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9860652bda6871b4b956656cf8f00dfa
+      internalID: 1566128904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_11
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 895
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4953ccd8db65e409ea390072f2abac
+      internalID: -826329926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_12
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 895
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1daab2f5cee6b7146aa3f5950b8629f3
+      internalID: 1448119407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_13
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 827
+        width: 46
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e345d47b664872e4d8025665148e5dba
+      internalID: 158559400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_14
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 828
+        width: 54
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442a44ba3805fe04e94b4941d8555c2f
+      internalID: -785369956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_15
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 827
+        width: 66
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e20567221721be4ca2dc43d32d9d4db
+      internalID: -661376551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_16
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 827
+        width: 70
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd656bc24c1f66d458e29826d03605be
+      internalID: 1250539867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_17
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 503
+        width: 70
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250246bc5170632458c04bfb8ef27f0e
+      internalID: -106738858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_18
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 503
+        width: 43
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35de2320f5a47b469047fc111275134
+      internalID: -1819825364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_19
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 504
+        width: 49
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0fdf5573c11044c9d8e555fdd4f5f6
+      internalID: 880553189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_20
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 504
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba3ee2136cda2b41bcd221792beb614
+      internalID: -799163260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_21
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 505
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b62cd89bcc00f7468dd8322f4c7e02c
+      internalID: -1965602190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_22
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 505
+        width: 45
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc839b29869c0144eb9aa5d34c3ccf0f
+      internalID: 1742409925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_23
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 507
+        width: 52
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7a817250da3a140b225957614d6e76
+      internalID: 1279522250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_24
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 503
+        width: 41
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e59f24dea3812340b7215200b4cec10
+      internalID: 816923251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters
+        - Goku Black (Super Saiyan Rose) (1)_25
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 505
+        width: 58
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639b4998925f81e42bdc48e51f7113af
+      internalID: -81435468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 53e744bf9f718674cbd10544374d3bc0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_0: 1243687138540209913
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_1: -420504498
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_10: 1566128904
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_11: -826329926
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_12: 1448119407
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_13: 158559400
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_14: -785369956
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_15: -661376551
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_16: 1250539867
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_17: -106738858
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_18: -1819825364
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_19: 880553189
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_2: -1049024636
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_20: -799163260
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_21: -1965602190
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_22: 1742409925
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_23: 1279522250
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_24: 816923251
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_25: -81435468
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_3: -1402215645
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_4: 1489644679
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_5: -1259764638
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_6: 1938622351
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_7: -127207996
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_8: 1535194335
+      Custom _ Edited - Dragon Ball Customs - Dragon Ball Super Characters - Goku Black (Super Saiyan Rose) (1)_9: 217817216
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

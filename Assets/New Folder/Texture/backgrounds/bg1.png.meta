@@ -145,12 +145,12 @@ TextureImporter:
       name: bg1_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4
-        width: 432
-        height: 440
+        x: 6
+        y: 9
+        width: 428
+        height: 435
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -172,7 +172,7 @@ TextureImporter:
         width: 296
         height: 344
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -189,7 +189,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9c426c6ad1a6a0a40b560ee7e4731307
     internalID: 0
     vertices: []
     indices: 
