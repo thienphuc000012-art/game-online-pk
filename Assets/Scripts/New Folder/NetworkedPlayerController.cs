@@ -239,6 +239,9 @@ public class NetworkedPlayerController : NetworkBehaviour
 
     private void HandleAttacks(NetworkInputData input)
     {
+
+        if (IsDamaged) return;
+
         if (input.Attack)
         {
             if (Object.HasStateAuthority && Runner.SimulationTime >= NextPunchTime)
@@ -269,9 +272,7 @@ public class NetworkedPlayerController : NetworkBehaviour
 
         if (Object.HasInputAuthority)
             RPC_SetIsPower(input.ChargePower);
-
-
-        if (IsDamaged) return;   
+ 
 
         _previousSuperHit = input.SuperHit;
         _previousShoot = input.Shoot;

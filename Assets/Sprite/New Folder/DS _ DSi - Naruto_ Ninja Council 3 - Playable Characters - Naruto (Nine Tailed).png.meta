@@ -1020,8 +1020,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine
-        Tailed)_52
+      name: jump
       rect:
         serializedVersion: 2
         x: 0
@@ -1043,11 +1042,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine
-        Tailed)_53
+      name: jump1
       rect:
         serializedVersion: 2
-        x: 58
+        x: 59
         y: 6486
         width: 56
         height: 67
@@ -1066,8 +1064,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine
-        Tailed)_54
+      name: jump2
       rect:
         serializedVersion: 2
         x: 6
@@ -1089,8 +1086,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine
-        Tailed)_55
+      name: jump3
       rect:
         serializedVersion: 2
         x: 63
@@ -1112,8 +1108,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine
-        Tailed)_56
+      name: ground
       rect:
         serializedVersion: 2
         x: 1
@@ -1135,8 +1130,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine
-        Tailed)_57
+      name: ground1
       rect:
         serializedVersion: 2
         x: 68
@@ -1158,16 +1152,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine
-        Tailed)_59
+      name: throw
       rect:
         serializedVersion: 2
         x: 7
         y: 6221
         width: 67
         height: 78
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.70863026, y: 0.10175656}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1181,16 +1174,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine
-        Tailed)_62
+      name: throw2
       rect:
         serializedVersion: 2
         x: 165
         y: 6221
         width: 73
         height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.7366937, y: 0.116888024}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1204,16 +1196,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine
-        Tailed)_64
+      name: throw3
       rect:
         serializedVersion: 2
         x: 250
         y: 6221
         width: 70
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.7246499, y: 0.11937834}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1227,16 +1218,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine
-        Tailed)_66
+      name: throw4
       rect:
         serializedVersion: 2
         x: 335
         y: 6222
         width: 67
         height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.7202203, y: 0.09359375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1250,16 +1240,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine
-        Tailed)_67
+      name: throw1
       rect:
         serializedVersion: 2
         x: 87
         y: 6221
         width: 69
-        height: 69
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 82
+      alignment: 9
+      pivot: {x: 0.71383756, y: 0.099877335}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1273,16 +1262,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine
-        Tailed)_68
+      name: throw5
       rect:
         serializedVersion: 2
-        x: 9
+        x: 6
         y: 6151
-        width: 55
+        width: 62
         height: 67
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.8193947, y: 0.11170709}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1296,16 +1284,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine
-        Tailed)_69
+      name: throw6
       rect:
         serializedVersion: 2
-        x: 86
+        x: 87
         y: 6149
-        width: 76
-        height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 75
+        height: 65
+      alignment: 9
+      pivot: {x: 0.69931906, y: 0.13859676}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1319,16 +1306,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine
-        Tailed)_70
+      name: throw7
       rect:
         serializedVersion: 2
         x: 164
         y: 6151
         width: 76
         height: 67
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.74778646, y: 0.117508166}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6792,26 +6778,12 @@ TextureImporter:
       DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_5: -547982398
       DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_50: 1385019856
       DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_51: 296850603
-      DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_52: -618780296
-      DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_53: 1494634977
-      DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_54: 238960669
-      DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_55: -564458831
-      DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_56: -818569297
-      DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_57: -1830100107
       DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_58: -962274499
-      DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_59: 80113370
       DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_6: -1694913553
       DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_60: 1115687997
       DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_61: 651898541
-      DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_62: -2055117238
       DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_63: 1680884810
-      DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_64: 544556428
       DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_65: -1150052874
-      DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_66: 1128233334
-      DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_67: 1318690900
-      DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_68: -356833611
-      DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_69: -1107318753
-      DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_70: 1117928599
       DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_72: 1442472082
       DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_73: 216811894
       DS _ DSi - Naruto_ Ninja Council 3 - Playable Characters - Naruto (Nine Tailed)_74: 1016048077
@@ -6846,10 +6818,16 @@ TextureImporter:
       charge7: 1062851567
       charge8: -964410548
       charge9: -1867132662
+      ground: -818569297
+      ground1: -1830100107
       idle: -814258989
       idle1: -1502211862
       idle2: 1372161345
       idle3: -2068697607
+      jump: -618780296
+      jump1: 1494634977
+      jump2: 238960669
+      jump3: -564458831
       ra: 1711025942
       ra1: 330722073
       ra10: -1274078413
@@ -6925,6 +6903,14 @@ TextureImporter:
       tele6: -1686477664
       tele7: 544276210
       tele8: 917086448
+      throw: 80113370
+      throw1: 1318690900
+      throw2: -2055117238
+      throw3: 544556428
+      throw4: 1128233334
+      throw5: -356833611
+      throw6: -1107318753
+      throw7: 1117928599
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
