@@ -20,7 +20,18 @@ public class VolumeUI : MonoBehaviour
     private float tempSFXVol;
     private void Start()
     {
-       float vol = PlayerPrefs.GetFloat("MusicVol", 1f);
+       // LẤY MUSIC SOURCE TỪ MUSIC MANAGER
+        if (MusicManager.Instance != null)
+        {
+            musicSource = MusicManager.Instance.audioSource;
+        }
+        else
+        {
+            Debug.LogWarning("Không tìm thấy MusicManager!");
+            return;
+        }
+
+        float vol = PlayerPrefs.GetFloat("MusicVol", 1f);
 
         musicSlider.value = vol;
         musicSource.volume = vol;
@@ -30,6 +41,7 @@ public class VolumeUI : MonoBehaviour
         musicSlider.onValueChanged.AddListener(OnMusicChanged);
         UpdateMusicIcon(vol);
 
+        // ===== SFX giữ nguyên =====
         float sfxVol = PlayerPrefs.GetFloat("SFXVol", 1f);
         sfxSlider.value = sfxVol;
         sfxSource.volume = sfxVol;
