@@ -130,7 +130,7 @@ public class NetworkedPlayerController : NetworkBehaviour
             if (CurHealthy <= 0) State = StatePlayer.Die;
         }
 
-        Debug.Log($"[DAMAGE] {PlayerName} nhận {damage} damage → HP còn {CurHealthy} (Authority: {Object.HasStateAuthority})");
+       // Debug.Log($"[DAMAGE] {PlayerName} nhận {damage} damage → HP còn {CurHealthy} (Authority: {Object.HasStateAuthority})");
 
         if (Runner.SimulationTime >= LastHitEffectTime + hitEffectCooldown)
         {
@@ -239,6 +239,9 @@ public class NetworkedPlayerController : NetworkBehaviour
 
     private void HandleAttacks(NetworkInputData input)
     {
+
+        if (IsDamaged) return;
+
         if (input.Attack)
         {
             if (Object.HasStateAuthority && Runner.SimulationTime >= NextPunchTime)
@@ -269,6 +272,7 @@ public class NetworkedPlayerController : NetworkBehaviour
 
         if (Object.HasInputAuthority)
             RPC_SetIsPower(input.ChargePower);
+ 
 
         _previousSuperHit = input.SuperHit;
         _previousShoot = input.Shoot;
@@ -322,6 +326,10 @@ public class NetworkedPlayerController : NetworkBehaviour
         _ani.SetBool("isDamaged", IsDamaged);
         _ani.SetBool("isPower", IsPower);
         _ani.SetInteger("power", CurPower);
+        AnimatorStateInfo state = _ani.GetCurrentAnimatorStateInfo(0);
+        bool isAttacking = state.IsName("hit") || state.IsName("kick") || state.IsName("superHit") || state.IsName("shoot");
+
+        _ani.SetBool("isDamaged", IsDamaged && !isAttacking);
     }
 
     [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]

@@ -139,12 +139,12 @@ TextureImporter:
       name: bg_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 1
-        width: 483
-        height: 226
+        x: 4
+        y: 6
+        width: 478
+        height: 219
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -166,7 +166,7 @@ TextureImporter:
         width: 282
         height: 279
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
