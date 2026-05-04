@@ -2097,7 +2097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenuUI
   musicSlider: {fileID: 364275146}
-  musicSource: {fileID: 1956039446}
+  musicSource: {fileID: 0}
   musicIcon: {fileID: 627130187}
   iconOn: {fileID: -3226782524198331696, guid: 3e4d60837dc687c4c8ab020005e70bc9, type: 3}
   iconOff: {fileID: -7978178689351951616, guid: 3e4d60837dc687c4c8ab020005e70bc9, type: 3}
@@ -5130,6 +5130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1852190931}
+  - component: {fileID: 1852190932}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -5154,6 +5155,19 @@ Transform:
   - {fileID: 1451036330}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1852190932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852190930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9392f4c09b53ef04ba63d2802aa588f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MusicManager
+  audioSource: {fileID: 1956039446}
 --- !u!1 &1901969647
 GameObject:
   m_ObjectHideFlags: 0
@@ -5418,7 +5432,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 2a59d4d3849618649ad162d0adc3a7c2, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
