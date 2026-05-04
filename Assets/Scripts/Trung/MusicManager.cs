@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 public class MusicManager : MonoBehaviour
 {
     public static MusicManager Instance;
-
     public AudioSource audioSource;
 
     private void Awake()
@@ -24,33 +23,45 @@ public class MusicManager : MonoBehaviour
 
     private void Start()
     {
-         if (audioSource.clip == null)
+        if (audioSource == null || audioSource.clip == null)
         {
-            Debug.LogError("CHƯA GÁN NHẠC!");
+            Debug.LogError("Chưa gán AudioSource hoặc AudioClip!");
             return;
         }
 
         audioSource.loop = true;
-        audioSource.Play(); // 🔥 luôn play, không check isPlaying
+        audioSource.Play();
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log("Scene: " + scene.name);
+        string sceneName = scene.name.ToLower();
+        Debug.Log("Scene: " + sceneName);
 
-        if (!audioSource.isPlaying)
+        // ✅ CHỈ CHO PHÁT Ở MAINMENU + LOBBY
+        if (sceneName == "mainmenu" || sceneName == "lobby")
         {
-            audioSource.Play();
+            if (audioSource != null && !audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            StopMusic(); // ❌ scene khác → dừng
         }
     }
 
     public void StopMusic()
     {
-        if (audioSource != null && audioSource.isPlaying)
+        // 🔥 tránh crash
+        if (audioSource != null)
         {
-            audioSource.Stop();
+            if (audioSource.isPlaying)
+                audioSource.Stop();
         }
 
-        Destroy(gameObject); // 🔥 xoá luôn để không bị dính qua game scene
+        SceneManager.sceneLoaded -= OnSceneLoaded; // 🔥 tránh callback sau khi destroy
+        Destroy(gameObject);
     }
 }
