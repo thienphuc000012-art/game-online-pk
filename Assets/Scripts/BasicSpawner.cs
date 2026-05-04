@@ -61,6 +61,7 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
     private bool _shootPressed;
     private bool _flashPressed;
     private bool _chargePower;
+    private bool _ultimatePressed;
     public bool IsInlobby { get; private set; }
     public bool IsStartingLobby { get; private set; }
     public bool IsInRoom { get; private set; }
@@ -376,7 +377,8 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
         _shootPressed |= Input.GetKeyDown(KeyCode.U);
         _flashPressed |= Input.GetKeyDown(KeyCode.LeftShift);
 
-        _chargePower = Input.GetKey(KeyCode.H);           
+        _chargePower = Input.GetKey(KeyCode.H);
+        _ultimatePressed |= Input.GetKeyDown(KeyCode.Alpha0);
         _moveDirection = new Vector2(Input.GetAxis("Horizontal"), 0);
     }
 
@@ -391,13 +393,15 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
             SuperHit = _superHitPressed,
             Shoot = _shootPressed,
             Flash = _flashPressed,
-            ChargePower = _chargePower
+            ChargePower = _chargePower,
+            Ultimate = _ultimatePressed
         };
 
         input.Set(inputData);
 
         _jumpPressed = _attackPressed = _blockPressed = false;
         _superHitPressed = _shootPressed = _flashPressed = false;
+        _ultimatePressed = false;
     }
     public void HostSelectCharacter(PlayerClass character)
     {

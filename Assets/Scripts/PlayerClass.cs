@@ -27,5 +27,6 @@ public struct NetworkInputData : INetworkInput
     public bool SuperHit; 
     public bool Shoot;    
     public bool Flash;
-    public bool ChargePower;   
+    public bool ChargePower;
+    public bool Ultimate;
 }

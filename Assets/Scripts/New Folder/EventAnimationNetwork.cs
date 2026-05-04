@@ -35,7 +35,7 @@ public class EventAnimationetwork : MonoBehaviour
         if (playerController != null)
         {
             // Gọi logic bullet của bạn (có thể di chuyển CallBulletPlayer vào đây)
-            Debug.Log("[EventAnimation] CallBullet - Nên thay bằng Networked spawn sau");
+         //   Debug.Log("[EventAnimation] CallBullet - Nên thay bằng Networked spawn sau");
         }
     }
 

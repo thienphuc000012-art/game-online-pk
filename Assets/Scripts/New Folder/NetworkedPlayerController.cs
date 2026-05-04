@@ -1,6 +1,9 @@
-﻿using Fusion;
-using UnityEngine;
+﻿using System.Linq;
+using Fusion;
 using TMPro;
+using UnityEngine;
+using UnityEngine.Playables;           // PlayableDirector
+using UnityEngine.Timeline;
 
 [RequireComponent(typeof(NetworkObject))]
 [RequireComponent(typeof(NetworkCharacterController))]
@@ -56,7 +59,11 @@ public class NetworkedPlayerController : NetworkBehaviour
     [SerializeField] private GameObject superHitImpactPrefab;
     [SerializeField] private GameObject hitImpactPrefab;
     [SerializeField] private float hitEffectCooldown = 1f;
- 
+    //[Header("=== ULTIMATE CUTSCENE - Spawn riêng ===")]
+    //[SerializeField] private NetworkPrefabRef ultimateCutscenePrefab;
+    //private NetworkObject _targetEnemy;
+    private PlayableDirector _director;                    
+    //[SerializeField] public TimelineAsset ultiTimeline;   
 
     [Header("DEBUG")]
     [SerializeField] private bool showDebugLogs = true;
@@ -64,6 +71,13 @@ public class NetworkedPlayerController : NetworkBehaviour
     private bool _previousSuperHit = false;
     private bool _previousShoot = false;
     private bool _previousFlash = false;
+
+    private void Awake()
+    {
+        _director = GetComponent<PlayableDirector>();
+        if (_director == null)
+            _director = gameObject.AddComponent<PlayableDirector>();
+    }
 
     [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
     private void RPC_PlayHit()
@@ -269,7 +283,10 @@ public class NetworkedPlayerController : NetworkBehaviour
 
         if (input.Flash && Object.HasInputAuthority && !_previousFlash)
             RPC_RequestFlash();
-
+        //if (input.Ultimate && Object.HasInputAuthority)
+        //{
+        //    TryActivateUltimate();
+        //}
         if (Object.HasInputAuthority)
             RPC_SetIsPower(input.ChargePower);
  
@@ -457,4 +474,88 @@ public class NetworkedPlayerController : NetworkBehaviour
             }
         }
     }
+    //public void TryActivateUltimate()
+    //{
+    //    if (!Object.HasInputAuthority) return;
+    //    if (CurPower < 80)
+    //    {
+    //        Debug.LogWarning($"[{PlayerName}] Not enough power for Ultimate!");
+    //        return;
+    //    }
+
+    //    _targetEnemy = FindClosestEnemy();
+    //    if (_targetEnemy == null)
+    //    {
+    //        Debug.LogWarning($"[{PlayerName}] No enemy in range for Ultimate!");
+    //        return;
+    //    }
+
+    //    // Gọi RPC từ InputAuthority → StateAuthority
+    //    RPC_RequestUltimate(_targetEnemy.InputAuthority);
+    //}
+
+    //// Đã có rồi, chỉ cần đảm bảo RPC_SpawnAndPlayCutscene được gọi đúng
+
+    //[Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
+    //private void RPC_RequestUltimate(PlayerRef enemyPlayerRef)
+    //{
+    //    if (CurPower < 80) return;
+    //    CurPower -= 80;
+
+    //    var enemyNO = Runner.GetPlayerObject(enemyPlayerRef);
+    //    if (enemyNO == null) return;
+
+    //    _targetEnemy = enemyNO;
+
+    //    RPC_SpawnAndPlayCutscene(enemyPlayerRef);
+    //}
+    //[Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    //private void RPC_SpawnAndPlayCutscene(PlayerRef enemyPlayerRef)
+    //{
+    //    if (ultimateCutscenePrefab == default(NetworkPrefabRef))
+    //    {
+    //        Debug.LogError("ultimateCutscenePrefab chưa được gán!");
+    //        return;
+    //    }
+
+    //    var enemyNO = Runner.GetPlayerObject(enemyPlayerRef);
+    //    if (enemyNO == null) return;
+
+    //    var spawnPos = transform.position + Vector3.up * 2f;
+
+    //    var cutsceneNO = Runner.Spawn(ultimateCutscenePrefab, spawnPos, Quaternion.identity);
+
+    //    var controller = cutsceneNO.GetComponent<UltimateCutsceneController>();
+    //    if (controller != null)
+    //    {
+    //        controller.RPC_SetupCutscene(Object, enemyNO, spawnPos, IsFacingRight);
+    //    }
+    //    else
+    //    {
+    //        Debug.LogError("UltimateCutsceneController không tìm thấy trên prefab!");
+    //    }
+
+    //    Debug.Log($"[Ultimate] Cutscene SPAWNED at {spawnPos} by {PlayerName}");
+    //}
+
+    //private NetworkObject FindClosestEnemy()
+    //{
+    //    NetworkObject closest = null;
+    //    float minDist = float.MaxValue;
+
+    //    foreach (var p in Runner.ActivePlayers)
+    //    {
+    //        if (p == Object.InputAuthority) continue;
+    //        var no = Runner.GetPlayerObject(p);
+    //        if (no == null) continue;
+
+    //        float dist = Vector3.Distance(transform.position, no.transform.position);
+    //        if (dist < minDist && dist < 15f)
+    //        {
+    //            minDist = dist;
+    //            closest = no;
+    //        }
+    //    }
+    //    return closest;
+    //}
 }
